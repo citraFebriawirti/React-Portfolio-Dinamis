@@ -25,7 +25,7 @@ export default function Education() {
                   <div className="flex flex-col items-center ">
                     <div className={"flex items-center w-full mx-auto " + (item.id % 2 == 0 ? "justify-end " :" justify-start")}   >
                       <div className="w-full lg:w-1/2 lg:pr-8">
-                        <div className="-z-10 p-4 bg-white rounded shadow-lg ml-7" data-aos={item.id % 2 == 0 ? "zoom-in-right" : "zoom-in-left"}>
+                        <div className="-z-10 p-4 bg-white rounded shadow-lg ml-7 mb-7" data-aos={item.id % 2 == 0 ? "zoom-in-right" : "zoom-in-left"}>
                           <time className="mb-1 text-sm font-normal leading-none text-gray-400 sm:text-center dark:text-gray-500">{item.time_edu}</time>
                           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{item.place_edu}</h3>
                         </div>
