@@ -81,3 +81,26 @@ export const projek = [
         
     }
 ]
+
+export const Edu = [
+    {
+        id: 1,
+        time_edu: "2020-Sekarang",
+        place_edu:"Universitas Metamedia",
+    },
+    {
+        id: 2,
+        time_edu: "2017-2020",
+        place_edu:"SMA N 9 Padang",
+    },
+    {
+        id: 3,
+        time_edu: "2014-2017",
+        place_edu:"SMP N 14 Padang",
+    },
+    {
+        id: 4,
+        time_edu: "2007-2014",
+        place_edu:"SD Negeri 03 Kampung Dalam",
+    }
+]

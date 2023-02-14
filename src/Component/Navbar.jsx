@@ -63,26 +63,26 @@ export default function NavBar() {
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                             <li className="text-gray-600 hover:text-teal-300">
-                                <a href="#home" onClick={() => { window.scrollTo({top: 90,behavior: 'smooth' })}}  className={`${Navbar_Link.Navlink_home}`}>Home</a>
+                                <a href="#home" onClick={() => { window.scrollTo({top: 100,behavior: 'smooth' })}}  className={`${Navbar_Link.Navlink_home}`}>Home</a>
                             </li>
                             <li className="text-gray-600 hover:text-blue-600">
-                                <a  href="#about" onClick={() => { window.scrollTo({top: 500,behavior: 'smooth' })}}  className={`${Navbar_Link.navlink_all}`}>About</a>
+                                <a  href="#about" onClick={() => { window.scrollTo({top: 600,behavior: 'smooth' })}}  className={`${Navbar_Link.navlink_all}`}>About</a>
                             </li>
                             <li className="text-gray-600 hover:text-blue-600">
                                 <a  href="#education"  onClick={() => { window.scrollTo({top: 1100,behavior: 'smooth' })}} className={`${Navbar_Link.navlink_all}`}>Education</a>
                             </li>
                             <li className="text-gray-600 hover:text-blue-600">
-                                <a   href="#skill" onClick={() => { window.scrollTo({top: 1700,behavior: 'smooth' })}} className={`${Navbar_Link.navlink_all}`}>Skill</a>
+                                <a   href="#skill" onClick={() => { window.scrollTo({top: 1600,behavior: 'smooth' })}} className={`${Navbar_Link.navlink_all}`}>Skill</a>
                             </li>
                             <li className="text-gray-600 hover:text-blue-600">
-                                <a  href="#project" onClick={() => { window.scrollTo({top: 2200,behavior: 'smooth' })}}  className={`${Navbar_Link.navlink_all}`}>Project</a>
+                                <a  href="#project" onClick={() => { window.scrollTo({top: 2100,behavior: 'smooth' })}}  className={`${Navbar_Link.navlink_all}`}>Project</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <button onClick={() => { window.scrollTo({top: 0,behavior: 'smooth' })}}  
-                className="fixed z-90 bottom-8 right-8 border-0 w-14 h-14 rounded-full  bg-teal-500 text-white text-3xl font-bold drop-shadow-lg">
+                className="fixed z-40 bottom-8 right-8 border-0 w-14 h-14 rounded-full  bg-teal-500 text-white text-3xl font-bold drop-shadow-lg">
                 <svg
                     aria-hidden="true"
                     focusable="false"

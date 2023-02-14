@@ -26,7 +26,7 @@ export default function About(props) {
         <h1 className="text-4xl text-[#213644]
         font-bold lg:text-6xl md:text-5xl">
         </h1>
-        <p className="font-normal text-gray-400 mb-16 text-xs flex justify-between md:text-base lg:text-xl lg:mt-3 sm:mt-6">
+        <p className="font-normal text-gray-400 mb-16 text-xs text-justify md:text-base lg:text-xl lg:mt-3 sm:mt-6">
         I am currently in the 6th semester studying at Universitas Metamedia. My major is Information System. I
         am interested in website development, especially in the field of Frontend development using Javascript as
         the main programming language. I take a part in student organization to improve my communication,

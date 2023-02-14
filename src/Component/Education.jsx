@@ -1,6 +1,14 @@
 import React from 'react'
+import { Edu } from './Constant/Index'
+import {useEffect} from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-export default function Education(props) {
+export default function Education() {
+  useEffect(() => {
+    AOS.init(
+    );
+  }, [])
   return (
     <div>
     <div id=''>
@@ -13,77 +21,24 @@ export default function Education(props) {
               <div className=" mt-20">
                 {/* <!-- Left section --> */}
                 <div>
+                {Edu.map((item) => (
                   <div className="flex flex-col items-center ">
-                    <div className="flex items-center justify-start w-full mx-auto ">
+                    <div className={"flex items-center w-full mx-auto " + (item.id % 2 == 0 ? "justify-end " :" justify-start")}   >
                       <div className="w-full lg:w-1/2 lg:pr-8">
-                        <div className="-z-10 p-4 bg-white rounded shadow-lg">
-                        <time className="mb-1 text-sm font-normal leading-none text-gray-400 sm:text-center dark:text-gray-500">2020 - Now</time>
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Universitas Metamedia</h3>
+                        <div className="-z-10 p-4 bg-white rounded shadow-lg ml-7" data-aos={item.id % 2 == 0 ? "zoom-in-right" : "zoom-in-left"}>
+                          <time className="mb-1 text-sm font-normal leading-none text-gray-400 sm:text-center dark:text-gray-500">{item.time_edu}</time>
+                          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{item.place_edu}</h3>
                         </div>
                       </div>
-                    </div>
-                    <div className="absolute  items-center justify-center w-8 h-8 transform -translate-x-1/2 -translate-y-4 bg-teal-600 border-2  rounded-full left-1/2 sm:translate-y-0 hidden lg:block ">
+                      <div className="absolute  items-center justify-center w-8 h-8 transform -translate-x-1/2 -translate-y-4 bg-teal-600 border-2  rounded-full left-1/2 sm:translate-y-0 hidden lg:block "></div>
                     </div>
                   </div>
+                ))}
                 </div>
 
-                {/* <!-- Right section --> */}
-                <div>
-                  <div className="flex flex-col items-center">
-                    <div className="flex items-center justify-end w-full mx-auto">
-                      <div className="w-full lg:w-1/2 lg:pl-8">
-                        <div className="p-4 bg-white rounded shadow-lg ">
-                        <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2017 - 2020</time>
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">SMA Negeri 9 Padang</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="absolute items-center justify-center w-8 h-8 transform -translate-x-1/2 -translate-y-4 bg-teal-600 border-2  rounded-full left-1/2 sm:translate-y-0 hidden lg:block ">
-                    </div>
-                  </div>
-                </div>
-
-                {/* <!-- Left section --> */}
-                <div>
-                  <div className="flex flex-col items-center">
-                    <div className="flex items-center justify-start w-full mx-auto">
-                      <div className="w-full lg:w-1/2 lg:pr-8">
-                      <div className="p-4 bg-white rounded shadow-lg ">
-                        <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2014 - 2017</time>
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">SMP Negeri 31 Padang</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="absolute items-center justify-center w-8 h-8 transform -translate-x-1/2 -translate-y-4 bg-teal-600 border-2  rounded-full left-1/2 sm:translate-y-0 hidden lg:block">
-                    </div>
-                  </div>
-                </div>
-
-                {/* <!-- Right section --> */}
-                <div>
-                  <div className="flex flex-col items-center">
-                    <div className="flex items-center justify-end w-full mx-auto">
-                      <div className="w-full lg:w-1/2 lg:pl-8">
-                      <div className="p-4 bg-white rounded shadow-lg ">
-                        <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2007 - 2014</time>
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">SD Negeri 03 Kampung Dalam
-</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="absolute items-center justify-center w-8 h-8 transform -translate-x-1/2 -translate-y-4 bg-teal-600 border-2  rounded-full left-1/2 sm:translate-y-0 hidden lg:block">
-                    </div>
-                  </div>
-              </div>
-              
               </div>
             </div>
   </div>
-
-
-
-
-    
     </div>
     </div>
   )
